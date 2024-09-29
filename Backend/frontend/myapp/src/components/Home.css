@@ -1,0 +1,84 @@
+/* Home Container */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a82fb, #fc5c7d);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Tagline */
+  .tagline {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  
+  /* CTA Button */
+  .cta-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 12px 30px;
+    background-color: #fc5c7d;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff7675;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Keyframe animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .intro{
+        width:80%;
+    }
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .tagline {
+      font-size: 1.2rem;
+    }
+  
+    .cta-btn {
+      padding: 10px 25px;
+    }
+  }
+  
